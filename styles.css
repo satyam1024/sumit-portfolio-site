@@ -1,0 +1,304 @@
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+  }
+  html {
+    scroll-behavior:auto;
+  }
+  
+#abc{
+    font-family: "Ruthie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.header{  
+    top:0px;
+    position: fixed;    
+    height: 10vh;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding:10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    margin-left: 10px;
+    
+}
+.innerheader{
+    position: inherit;
+    right:0;
+}
+.innerheader a{
+    margin-right: 40px;;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.innerheader a:hover{
+   padding: 0.5px 3px;
+   background-color: rgb(234, 86, 86);
+   border-radius: 6px;
+   padding: 3px 4px;
+}
+#home{
+    position: relative;
+    background-color: rgb(7, 0, 0);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+
+}
+.homeleft{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 1.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+    
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+.homeleft{
+    position: relative;
+    top:14vh;
+    height:90vh;
+    width: 50%;
+}
+.homeright{
+    position: relative;
+    top:14vh;
+    height:90vh;
+    width: 50%;
+}
+.homeleft p,h1{
+    text-align: center;
+    font-family:  'Times New Roman';
+    font-size: 2rem;
+}
+.homeleft h1{
+    font-weight: 1  00;
+    font-style: normal;
+    font-size: 60px;
+    padding: 0px;
+    font-size: 5rem;
+}
+
+.homeright #selfimg{
+    position: absolute;
+    left:70px;
+    bottom: 700px;
+    width: 100%;
+    height: 70%;;
+    bottom: 20%;
+    align-self: center;
+    border-radius :60%;
+    background-color: black;
+
+}
+#socialsimg img:hover{
+    padding:0.5px 1px;
+    border-radius: 6px;
+    background-color: red;
+    cursor: pointer;
+}
+#about{
+    position: relative;
+    background-color: rgb(52, 49, 49);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+}
+.aboutleft{
+    height: 100vh;
+    width:60%;
+    margin-left: 20px;
+}
+.aboutright{
+    height: 100vh;
+    width:40%;
+    display:block;
+}
+.aboutleft h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family:monospace;
+}
+.aboutleft p{
+    
+    font-size: x-large;
+    text-align:center;
+    font-weight: 100;
+    font-family:monospace;
+    line-height: 40px;
+}
+
+.aboutright h3{
+    margin-top: 40px;
+    text-align: right;
+    margin-right: 40px;
+}
+.aboutright li{
+    list-style: url("./newtraingle.png");
+    list-style-position: inside;
+    line-height: 40px;
+    text-align: center;
+    
+}
+
+#projects{
+   
+    height: 100vh;
+    width: 100%;
+   
+}
+#projects h1{
+    padding-bottom: 0px;
+}
+#projects p{
+    text-align: center;
+}
+
+.carousel-container {
+    margin-top: 5%;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 20px;
+    animation: slide 15s linear infinite;
+    
+  }
+  
+  .carousel-item {
+    min-width: 300px;
+    flex-shrink: 0;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 60vh;   
+    display: block;
+  }
+  
+  /* Smooth sliding effect */
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 7)); /* Adjust based on number of items */
+    }
+  }
+  .btnseemore{
+   text-align: center;
+   display: block;
+   padding:7px 13px;
+   background-color: rgb(227, 11, 11);
+   margin-top: 30px;;
+   margin-left: 50%;
+   border-radius: 5px;
+  }
+  .btnseemore:hover{
+    background-color: white;
+    color:black;
+  }
+
+#contact{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+#contact p{
+    text-align: center;
+}
+
+#contact div{
+    border-radius: 5px;
+    margin: auto;
+    height: 100vh;
+    width: 50vw;
+    background-color:#0B192C;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+#contact div input{
+    background-color: #253a52;
+    border-radius: 6px;
+    border-color: transparent;
+}
+
+.ipt{
+    margin:auto;
+    width: 85%;
+    height:10%;
+    margin-bottom: 5%;
+}
+.lbl1{
+    margin-top: 6%;
+}
+label{
+    margin-left: 7%;
+}
+
+.msgipt{
+    margin:auto;
+    height: 50%;
+    width: 85%;;
+    margin-bottom: 5%;
+}
+.msgipt::placeholder{
+    font-weight: 800;
+    font-style: italic;
+    text-decoration:dotted;
+    text-align: left;
+}
+#submitmail{
+    border-radius: 3px;
+    background-color:#FF6500;
+    border-color: transparent;
+    margin: auto;
+    height: 50px;
+    width: 90px;
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2%;
+
+}
+#submitmail:hover{
+    transform: translate(-2px,-3px);
+    background-color: #d1ac94;
+}
